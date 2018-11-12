@@ -73,7 +73,9 @@ body{
 .nav li a:hover {
     color: rgba(255, 255, 255, 1);
 }
-
+.main-container{
+	position: relative;
+}
 .main-banner {
     max-width: 1190px;
     margin: 0 auto;
