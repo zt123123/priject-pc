@@ -22,8 +22,9 @@ body{
 }
 .container {
     overflow: hidden;
-    min-width: 1366px;
-    max-width: 1920px;
+    width: 1920px;
+    /*min-width: 1366px;*/
+    /*max-width: 1920px;*/
     margin: 0 auto;
 }
 
@@ -480,10 +481,8 @@ body{
 
 @media screen and (max-width: 1367px) {  
     .main-banner {
-        margin-left: 0px;
-        margin-right: 0px;
+
     }
     .section-one{
-        /*right: 50px;*/
     }
 }
