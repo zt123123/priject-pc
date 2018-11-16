@@ -421,13 +421,13 @@ body{
     left: 347px;
     position: relative;
     width: 575px;
-    height: 811px;
-    margin-top: -405px;
+    height: 580px;
+    margin-top: -290px;
 }
 
 .main-pic {
-    width: 493px;
-    height: 695px;
+    width: 472px;
+    height: 580px;
 }
 
 .four-desc {
@@ -454,13 +454,13 @@ body{
 }
 
 .desc-two {
-    left: -347px;
-    top: 421px;
+    left: -207px;
+    bottom: 170px;
 }
 
 .desc-three {
-    right: -291px;
-    bottom: 143px;
+    left: 218px;
+    bottom: 20px;
 }
 
 .section-four-desc {
@@ -470,9 +470,10 @@ body{
 }
 
 .com-info {
+    position: relative;
     width: 1190px;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 504px;
 
     font-size: 24px;
@@ -482,13 +483,31 @@ body{
 }
 
 .qq-num {
-    margin: 0 100px;
+    /* margin: 0 100px; */
 }
 .qq-num a{
     color: rgba(41, 41, 41, 1);
 }
-
+.map-style{
+    position: absolute;
+    top: 50%;
+    margin-top: -275px;
+    width:700px;
+    height:550px;
+    border:#ccc solid 1px;
+    font-size:12px
+}
+.address-wrapper{
+    position: absolute;
+    left: 750px;
+    top: 50%;
+    margin-top: -100px;
+}
 .copy-right {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     text-align: center;
     margin-top: 40px;
 
