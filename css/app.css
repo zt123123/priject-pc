@@ -27,6 +27,7 @@ body{
     width: 1190px;
     height: 100%;
     overflow: hidden;
+    /*background-color: #f00;*/
     /* margin-top: 79px; */
 }
 
@@ -37,12 +38,13 @@ body{
 }
 
 .nav-container{
-    width: 100%;
+    /*width: 100%;*/
+    overflow: hidden;
     height: 79px;
-    position: fixed;
+/*    position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 999;*/
 }
 .nav-wrapper {
     background-color: #0c0d23;
@@ -97,7 +99,7 @@ body{
     margin: 0 auto;
     overflow: hidden;
     /* margin-top: 97px; */
-    padding-top: 97px;
+    /*padding-top: 97px;*/
     /* margin-left: 206px;
     margin-right: 223px; */
 }
@@ -187,7 +189,27 @@ body{
 
 .section-one-wrapper {
     position: relative;
-    height: 760px;
+    background: url("../img/bg1.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.section-two-wrapper {
+    position: relative;
+    background: url("../img/bg3.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.section-threes-wrapper {
+    position: relative;
+    background: url("../img/bg2.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.section-four-wrapper {
+    position: relative;
+    background: url("../img/bg1.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .section-one {
@@ -196,7 +218,7 @@ body{
     right: 92px;
     width: 800px;
     height: 486px;
-    margin-top: -254px;
+    margin-top: -243px;
     background: rgba(250, 250, 250, 1);
     -webkit-box-shadow: 0px 9px 44px 0px rgba(0, 0, 0, 0.22);
             box-shadow: 0px 9px 44px 0px rgba(0, 0, 0, 0.22);
@@ -210,8 +232,8 @@ body{
 .section-one .gaoxiao {
     top: -8px;
     left: -62px;
-    width: 350px;
-    height: 174px;
+    width: 335px;
+    height: 166px;
 }
 
 .section-one .xinwen {
@@ -224,22 +246,22 @@ body{
 .section-one .meishi {
     top: 63px;
     right: -92px;
-    width: 357px;
-    height: 174px;
+    width: 341px;
+    height: 166px;
 }
 
 .section-one .yule {
     bottom: 101px;
     left: 12px;
-    width: 350px;
-    height: 187px;
+    width: 335px;
+    height: 179px;
 }
 
 .section-one .shehui {
     right: 36px;
     bottom: 2px;
-    width: 350px;
-    height: 174px;
+    width: 335px;
+    height: 166px;
 }
 
 .title-text {
@@ -301,7 +323,7 @@ body{
     position: absolute;
     top: 50%;
     left: 0;
-    margin-top: -290px;
+    margin-top: -266px;
     width: 814px;
     height: 533px;
 }
@@ -322,10 +344,10 @@ body{
 .section-three-wrapper {
     position: absolute;
     top: 50%;
-    right: 293px;
-    margin-top: -429px;
-    width: 600px;
-    height: 858px;
+    right: 171px;
+    margin-top: -295px;
+    width: 513px;
+    height: 590px;
 }
 
 .section-three img {
@@ -336,57 +358,57 @@ body{
 .section-three .task-pic {
     top: 0;
     right: 0;
-    width: 542px;
-    height: 776px;
+    width: 513px;
+    height: 590px;
 }
 
 .section-three-wrapper .countdown {
     width: 287px;
-    right: -176px;
-    top: 140px;
+    right: -102px;
+    top: 98px;
 }
 
 .section-three-wrapper .video {
     width: 287px;
-    left: -126px;
-    top: 352px;
+    left: -170px;
+    top: 203px;
 }
 
 .section-three-wrapper .sign {
     width: 220px;
-    top: 370px;
-    right: -171px;
+    top: 280px;
+    right: -127px;
 }
 
 .section-three-wrapper .novel {
     width: 287px;
-    left: -264px;
-    bottom: 249px;
+    left: -340px;
+    bottom: 128px;
 }
 
 .section-three-wrapper .read {
     width: 287px;
-    left: 161px;
-    bottom: 222px;
+    left: 117px;
+    top: 243px;
 }
 
 .section-three-wrapper .news {
     width: 287px;
-    bottom: 180px;
-    right: -293px;
+    bottom: 62px;
+    right: -171px;
 }
 
 
 .section-three-wrapper .hot-word {
     width: 276px;
-    left: -189px;
-    bottom: 101px;
+    left: -169px;
+    bottom: 11px;
 }
 
 .section-three-wrapper .red-pack {
     width: 249px;
-    right: 40px;
-    bottom: 114px;
+    left: 121px;
+    bottom: 52px;
 }
 .circle-radius{
     position: absolute;
@@ -412,8 +434,8 @@ body{
 
 .section-three-desc {
     position: absolute;
-    top: 167px;
-    left: -230px;
+    top: 90px;
+    left: -504px;
 }
 
 .section-four {
@@ -474,7 +496,7 @@ body{
     width: 1190px;
     margin: 0 auto;
     /* text-align: center; */
-    margin-top: 504px;
+    /*margin-top: 504px;*/
 
     font-size: 24px;
     font-weight: 400;
@@ -509,13 +531,11 @@ body{
     left: 0;
     bottom: 0;
     text-align: center;
-    margin-top: 40px;
 
-    height: 60px;
-    line-height: 60px;
+    line-height: 40px;
     background: rgba(61, 62, 64, 1);
 
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
 }

@@ -23,21 +23,21 @@
 			<div class="circle-radius"></div>
 			<div class="radius-rect-r"></div>
 			<div class="radius-rect-l"></div> -->
-	<!-- 导航 -->
-	<div id="nav" class="nav-container">
-		<div class="nav-wrapper">
-			<h1 class="logo">全明头条</h1>
-			<ul class="nav">
-				<li><a style="color:#fff;" href="#">首页</a></li>
-				<li><a href="#content">产品介绍</a></li>
-				<li><a href="#about">关于我们</a></li>
-			</ul>
-		</div>
-	</div>
+
 	<div id="fullpage">
 		<!-- 第一屏 -->
 		<section class="nav-hreader section">
-
+			<!-- 导航 -->
+			<div id="nav" class="nav-container">
+				<div class="nav-wrapper">
+					<h1 class="logo">全明头条</h1>
+<!-- 					<ul class="nav">
+						<li><a style="color:#fff;" href="#">首页</a></li>
+						<li><a href="#content">产品介绍</a></li>
+						<li><a href="#about">关于我们</a></li>
+					</ul> -->
+				</div>
+			</div>
 			<div class="main-banner">
 				<div class="introduce">
 					<h3 amt="animated fadeInLeftBig" class="animated fadeInLeftBig">边看边赚的趣味阅读神器</h3>
@@ -84,7 +84,7 @@
 		</section>
 
 		<!-- 第三屏 -->
-		<section class="section">
+		<section class="section section-two-wrapper">
 			<div class="section-two container">
 				<img amt="animated fadeInUp" src="./img/video_banner.png" alt="">
 				<div amt="animated fadeInRightBig" class="section-two-desc">
@@ -98,7 +98,7 @@
 		</section>
 
 		<!-- 第四屏 -->
-		<section class="section">
+		<section class="section section-threes-wrapper">
 			<div class="section-three container">
 				<div class="section-three-wrapper">
 					<div amt="animated zoomIn faster delay-1s" class="section-three-desc">
@@ -122,14 +122,14 @@
 		</section>
 
 		<!-- 第五屏 -->
-		<section class="section">
+		<section class="section section-four-wrapper">
 			<div class="container">
 				<div class="section-four">
 					<img class="main-pic" src="./img/invite.png" alt="">
 
-					<div amt="animated fadeInLeftBig" class="four-desc desc-one">每邀请1个好友，可得10元现金</div>
-					<div amt="animated fadeInLeftBig faster delay-1s" class="four-desc desc-two">邀请好友，还可得特权卡，享低门槛提现</div>
-					<div amt="animated fadeInRightBig" class="four-desc desc-three">还可持续获得徒弟、徒孙的高额收益分成</div>
+					<div amt="animated fadeInLeftBig delay-0-04" class="four-desc desc-one">每邀请1个好友，可得10元现金</div>
+					<div amt="animated fadeInLeftBig faster delay-0-06" class="four-desc desc-two">邀请好友，还可得特权卡，享低门槛提现</div>
+					<div amt="animated fadeInRightBig faster delay-0-08" class="four-desc desc-three">还可持续获得徒弟、徒孙的高额收益分成</div>
 					<div amt="animated lightSpeedIn" class="section-four-desc">
 						<h3 class="title-text">邀请有礼</h3>
 						<div class="sub-desc-text">
@@ -144,27 +144,29 @@
 
 
 		<!-- 第六屏 底部 -->
-		<div id="about" class="com-info section">
+		<section id="about" class="com-info section">
 			<!--百度地图容器-->
 			<div class="container">
 				<div class="map-style" id="map"></div>
 				<div class="address-wrapper">
 					<h3>联系方式</h3>
-					<div><a class="email" href="mailto:bd@huanxifin.com">联系邮箱：bd@huanxifin.com</a></div>
-					<div class="qq-num"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2212523907&site=qq&menu=yes">QQ：2212523907</a></div>
-					<div>联系地址：湖北省武汉市光谷软件园</div>
+					<div amt="animated fadeInDown delay-0-02"><a class="email" href="mailto:bd@huanxifin.com">联系邮箱：bd@huanxifin.com</a></div>
+					<div amt="animated fadeInDown delay-0-5" class="qq-num"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2212523907&site=qq&menu=yes">QQ：2212523907</a></div>
+					<div amt="animated fadeInDown delay-0-06">联系地址：湖北省武汉市光谷软件园</div>
 				</div>
 			</div>
 			<div class="copy-right">
 				Copyright@全民头条 | 鄂ICP备17028937号-1
 			</div>
-		</div>
+		</section>
 	</div>
 
 	<script>
 		$(function () {
 			$("#fullpage").fullpage({
 				licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+				navigation: true,//是否显示导航，默认为false
+				navigationPosition: 'right',//导航小圆点的位置
 				onLeave: function (index, nextIndex, dir) {
 					$("[amt]").each(function (i, ele) {
 						var amt = $(ele).attr("amt");
@@ -222,7 +224,7 @@
 			}
 			function addMapOverlay() {
 				var markers = [
-					{ content: "湖北省武汉市光谷软件园E4栋", title: "光谷软件园E4栋", imageOffset: { width: 0, height: 3 }, position: { lat: 30.484678, lng: 114.41171 } }
+					{ content: "湖北省武汉市光谷软件园", title: "光谷软件园", imageOffset: { width: 0, height: 3 }, position: { lat: 30.484678, lng: 114.41171 } }
 				];
 				for (var index = 0; index < markers.length; index++) {
 					var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
