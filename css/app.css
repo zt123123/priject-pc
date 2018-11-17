@@ -128,6 +128,7 @@ body{
 }
 
 .phone-img {
+	overflow: hidden;
     float: right;
     width: 520px;
     height: 612px;
@@ -189,25 +190,25 @@ body{
 
 .section-one-wrapper {
     position: relative;
-    background: url("../img/bg1.png") center no-repeat;
+    background: url("../img/bg1.png") bottom right no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .section-two-wrapper {
     position: relative;
-    background: url("../img/bg3.png") center no-repeat;
+    background: url("../img/bg2.png") top right no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .section-threes-wrapper {
     position: relative;
-    background: url("../img/bg2.png") center no-repeat;
+    background: url("../img/bg3.png") bottom right no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .section-four-wrapper {
     position: relative;
-    background: url("../img/bg1.png") center no-repeat;
+    background: url("../img/bg4.png") top right no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
