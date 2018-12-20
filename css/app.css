@@ -524,7 +524,8 @@ body{
     position: absolute;
     left: 750px;
     top: 50%;
-    margin-top: -100px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .copy-right {
     width: 100%;
